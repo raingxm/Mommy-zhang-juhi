@@ -17,20 +17,20 @@ public class MommyTest {
     }
 
     @Test
-    public void shouldReturnbMommyIfHaveOneConsonantAndOneVowel(){
-        Mommy mommy=new Mommy();
-        assertThat(mommy.translate("ba"),is("bmommy"));
+    public void shouldReturnBMommyIfHaveOneConsonantAndOneVowel() {
+        Mommy mommy = new Mommy();
+        assertThat(mommy.translate("ba"), is("bmommy"));
     }
 
     @Test
-    public void shouldReturnSingleMommyIfContiousVoewl() {
+    public void shouldReturnSingleMommyIfContiousVowel() {
         Mommy mommy = new Mommy();
         assertThat(mommy.translate("aa"), is("mommy"));
     }
 
     @Test
-    public  void shouldChangeToMommyIfVowelsAreMoreThanThrityPercentage(){
-        Mommy mommy=new Mommy();
-        assertThat(mommy.translate("abbb"),is("abbb"));
+    public void shouldChangeToMommyIfVowelsAreMoreThan30Percentage() {
+        Mommy mommy = new Mommy();
+        assertThat(mommy.translate("abbb"), is("abbb"));
     }
 }
